@@ -23,7 +23,7 @@ export function Navigation() {
       >
         <div className="mx-auto px-6 md:px-8 xl:px-6 flex items-center justify-between h-[60px]">
           <a 
-            href="#" 
+            href="/" 
             className="flex items-center justify-center shrink-0 h-[46px] w-[120px] rounded-full transition-all duration-300 hover:opacity-80"
           >
             <Image

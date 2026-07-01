@@ -33,15 +33,15 @@ export function Footer() {
 
         <div className="flex flex-col gap-3.5">
           <p className="font-accent text-[13px] font-semibold text-paper-white uppercase tracking-[0.08em] mb-1">Company</p>
-          <a href="#" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint">About</a>
-          <a href="#" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint">Contact</a>
-          <a href="#" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint">Careers</a>
+          <a href="/" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint">About</a>
+          <a href="/" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint">Contact</a>
+          <a href="/" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint">Careers</a>
         </div>
 
         <div className="flex flex-col gap-3.5">
           <p className="font-accent text-[13px] font-semibold text-paper-white uppercase tracking-[0.08em] mb-1">Legal</p>
-          <a href="#" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint">Terms of Service</a>
-          <a href="#" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint">Privacy Policy</a>
+          <a href="/" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint">Terms of Service</a>
+          <a href="/" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint">Privacy Policy</a>
         </div>
       </div>
 

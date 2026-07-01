@@ -65,6 +65,7 @@ export default function DotGrid({
   const pointerRef = useRef({ x: -9999, y: -9999 });
   const sizeRef = useRef({ width: 0, height: 0, dpr: 1 });
   const reducedMotionRef = useRef(false);
+  const isVisibleRef = useRef(false);
 
   const baseRgb = useMemo(() => hexToRgb(baseColor), [baseColor]);
   const activeRgb = useMemo(() => hexToRgb(activeColor), [activeColor]);
@@ -131,8 +132,17 @@ export default function DotGrid({
       window.addEventListener("resize", buildGrid);
     }
 
+    const intersectionObserver = new IntersectionObserver(
+      ([entry]) => {
+        isVisibleRef.current = entry.isIntersecting;
+      },
+      { rootMargin: "200px" } // trigger slightly before it comes into view
+    );
+    if (wrapper) intersectionObserver.observe(wrapper);
+
     return () => {
       observer?.disconnect();
+      intersectionObserver.disconnect();
       window.removeEventListener("resize", buildGrid);
     };
   }, [buildGrid]);
@@ -146,6 +156,11 @@ export default function DotGrid({
       const ctx = canvas?.getContext("2d");
 
       if (!canvas || !ctx) return;
+
+      if (!isVisibleRef.current) {
+        frame = requestAnimationFrame(draw);
+        return;
+      }
 
       const { width, height } = sizeRef.current;
       ctx.clearRect(0, 0, width, height);
@@ -211,6 +226,7 @@ export default function DotGrid({
     };
 
     const onMove = (event: MouseEvent) => {
+      if (!isVisibleRef.current) return;
       const canvas = canvasRef.current;
       if (!canvas) return;
 
@@ -262,6 +278,7 @@ export default function DotGrid({
     };
 
     const onClick = (event: MouseEvent) => {
+      if (!isVisibleRef.current) return;
       const canvas = canvasRef.current;
       if (!canvas) return;
 
