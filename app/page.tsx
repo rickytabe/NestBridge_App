@@ -144,8 +144,11 @@ function ProblemSection() {
   ];
 
   return (
-    <section className="section bg-white py-[100px] md:py-[140px]">
-      <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6">
+    <section className="section bg-white py-[100px] md:py-[140px] relative overflow-hidden">
+      <div className="absolute inset-0 z-0 opacity-100 pointer-events-none">
+        <DotGrid dotSize={2} gap={32} baseColor="#0B0F0D" activeColor="#0F7A4A" proximity={120} />
+      </div>
+      <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6 relative z-10">
         <p className="reveal-clip font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">The Problem</p>
         <h2 className="reveal reveal-delay-1 text-[clamp(32px,5vw,52px)] text-ink-black mb-5 md:mb-6 max-w-[720px] text-center mx-auto leading-[1.15] tracking-[-0.02em] font-medium font-heading">
           Co-founder search is not a contact list.
@@ -210,8 +213,11 @@ function HowItWorksSection() {
   ];
 
   return (
-    <section id="how-it-works" className="section bg-cloud py-[100px] md:py-[140px]">
-      <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6">
+    <section id="how-it-works" className="section bg-cloud py-[100px] md:py-[140px] relative overflow-hidden">
+      <div className="absolute inset-0 z-0 opacity-100 pointer-events-none">
+        <DotGrid dotSize={2} gap={32} baseColor="#0B0F0D" activeColor="#0F7A4A" proximity={120} />
+      </div>
+      <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6 relative z-10">
         <p className="reveal-clip font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">How NestBridge Works</p>
         <h2 className="reveal reveal-delay-1 text-[clamp(32px,5vw,52px)] text-ink-black mb-5 md:mb-6 max-w-[720px] text-center mx-auto leading-[1.15] tracking-[-0.02em] font-medium font-heading">
           From founder profile to investor-ready venture brief.
@@ -257,8 +263,11 @@ function HowItWorksSection() {
 /* ───────────────────────── SHOWCASE ───────────────────────── */
 function ShowcaseSection() {
   return (
-    <section className="section bg-ink-black text-paper-white overflow-hidden py-[100px] md:py-[140px]">
-      <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6">
+    <section className="section bg-ink-black text-paper-white overflow-hidden py-[100px] md:py-[140px] relative">
+      <div className="absolute inset-0 z-0 opacity-70 mix-blend-screen pointer-events-none">
+        <DotGrid dotSize={2} gap={32} baseColor="#FFFFFF" activeColor="#3FE0A5" proximity={120} />
+      </div>
+      <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <div className="text-left">
             <p className="reveal-clip font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-signal-mint mb-5 text-left ml-0">
@@ -346,8 +355,11 @@ function DifferentiatorSection() {
   ];
 
   return (
-    <section className="section bg-white py-[100px] md:py-[140px]">
-      <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6">
+    <section className="section bg-white py-[100px] md:py-[140px] relative overflow-hidden">
+      <div className="absolute inset-0 z-0 opacity-100 pointer-events-none">
+        <DotGrid dotSize={2} gap={32} baseColor="#0B0F0D" activeColor="#0F7A4A" proximity={120} />
+      </div>
+      <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6 relative z-10">
         <p className="reveal-clip font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">Why NestBridge</p>
         <h2 className="reveal reveal-delay-1 text-[clamp(32px,5vw,52px)] text-ink-black mb-5 md:mb-6 max-w-[720px] text-center mx-auto leading-[1.15] tracking-[-0.02em] font-medium font-heading">
           Built for startup team formation,
@@ -416,8 +428,11 @@ function FeaturesSection() {
   ];
 
   return (
-    <section id="features" className="section bg-cloud py-[100px] md:py-[140px]">
-      <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6">
+    <section id="features" className="section bg-cloud py-[100px] md:py-[140px] relative overflow-hidden">
+      <div className="absolute inset-0 z-0 opacity-100 pointer-events-none">
+        <DotGrid dotSize={2} gap={32} baseColor="#0B0F0D" activeColor="#0F7A4A" proximity={120} />
+      </div>
+      <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6 relative z-10">
         <p className="reveal-clip font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">Features</p>
         <h2 className="reveal reveal-delay-1 text-[clamp(32px,5vw,52px)] text-ink-black mb-5 md:mb-6 max-w-[720px] text-center mx-auto leading-[1.15] tracking-[-0.02em] font-medium font-heading">
           Co-founder matching features built
@@ -446,8 +461,11 @@ function FeaturesSection() {
 /* ───────────────────────── SOCIAL PROOF ───────────────────────── */
 function SocialProofSection() {
   return (
-    <section className="section bg-white pt-[140px] pb-0">
-      <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6 text-center">
+    <section className="section bg-white pt-[140px] pb-0 relative overflow-hidden">
+      <div className="absolute inset-0 z-0 opacity-100 pointer-events-none">
+        <DotGrid dotSize={2} gap={32} baseColor="#0B0F0D" activeColor="#0F7A4A" proximity={120} />
+      </div>
+      <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6 text-center relative z-10">
         <div className="reveal-scale relative rounded-[32px] overflow-hidden min-h-[400px] md:min-h-[500px] flex items-center justify-center py-20 px-6 max-w-[1200px] mx-auto shadow-sm">
           <Image
             src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1600&q=80"
@@ -476,8 +494,11 @@ function SocialProofSection() {
 /* ───────────────────────── PRICING ───────────────────────── */
 function PricingSection() {
   return (
-    <section id="pricing" className="section bg-cloud py-[100px] md:py-[140px]">
-      <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6">
+    <section id="pricing" className="section bg-cloud py-[100px] md:py-[140px] relative overflow-hidden">
+      <div className="absolute inset-0 z-0 opacity-100 pointer-events-none">
+        <DotGrid dotSize={2} gap={32} baseColor="#0B0F0D" activeColor="#0F7A4A" proximity={120} />
+      </div>
+      <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6 relative z-10">
         <p className="reveal-clip font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">Pricing</p>
         <h2 className="reveal reveal-delay-1 text-[clamp(32px,5vw,52px)] text-ink-black mb-5 md:mb-6 max-w-[720px] text-center mx-auto leading-[1.15] tracking-[-0.02em] font-medium font-heading">
           Free co-founder matching to start.
@@ -597,8 +618,11 @@ function FaqSection() {
   ];
 
   return (
-    <section id="faq" className="section bg-white py-[100px] md:py-[140px]">
-      <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6">
+    <section id="faq" className="section bg-white py-[100px] md:py-[140px] relative overflow-hidden">
+      <div className="absolute inset-0 z-0 opacity-100 pointer-events-none">
+        <DotGrid dotSize={2} gap={32} baseColor="#0B0F0D" activeColor="#0F7A4A" proximity={120} />
+      </div>
+      <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6 relative z-10">
         <p className="reveal-clip font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">FAQ</p>
         <h2 className="reveal reveal-delay-1 text-[clamp(32px,5vw,52px)] text-ink-black mb-5 md:mb-6 max-w-[720px] text-center mx-auto leading-[1.15] tracking-[-0.02em] font-medium font-heading">
           Co-Founder Matching FAQ
@@ -618,6 +642,9 @@ function FaqSection() {
 function FinalCtaSection() {
   return (
     <section className="bg-ink-black text-paper-white py-[100px] md:py-[140px] border-b border-white/5 relative overflow-hidden">
+      <div className="absolute inset-0 z-0 opacity-[0.15] mix-blend-screen pointer-events-none">
+        <DotGrid dotSize={2} gap={32} baseColor="#FFFFFF" activeColor="#3FE0A5" proximity={120} />
+      </div>
       <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6 text-center relative z-10">
         <h2 className="reveal font-heading text-[clamp(36px,5vw,56px)] leading-[1.1] mb-6 max-w-[800px] mx-auto font-medium">
           Find your startup co-founder.
