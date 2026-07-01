@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import { Navigation } from "../components/Navigation";
 import { Footer } from "../components/Footer";
+import DotGrid from "../components/DotGrid";
 import { useRevealOnScroll } from "../hooks/useRevealOnScroll";
 
 export default function Home() {
@@ -55,24 +56,43 @@ function HeroSection() {
           alt=""
           fill
           priority
-          className="object-cover opacity-40 grayscale contrast-125"
+          className="object-cover opacity-35 grayscale contrast-125"
         />
+        <div className="absolute inset-0 opacity-70 mix-blend-screen">
+          <DotGrid
+            dotSize={3}
+            gap={26}
+            baseColor="#FFFFFF"
+            activeColor="#3FE0A5"
+            proximity={145}
+            speedTrigger={105}
+            shockRadius={240}
+            shockStrength={2.2}
+            resistance={0.92}
+            returnDuration={1.2}
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-ink-black" />
       </div>
 
       <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6 relative z-10 pt-[140px] pb-[100px] flex flex-col items-center">
         <div className="max-w-[800px] text-center flex flex-col items-center">
-          <span className="reveal inline-block px-4 py-1.5 rounded-full border border-white/15 bg-white/5 font-accent text-[13px] font-medium tracking-[0.06em] uppercase text-white/80 mb-8 backdrop-blur-md">
+          <span className="reveal-clip inline-block px-4 py-1.5 rounded-full border border-white/15 bg-white/5 font-accent text-[13px] font-medium tracking-[0.06em] uppercase text-white/80 mb-8 backdrop-blur-md">
             Founder compatibility matching for serious startup teams
           </span>
 
-          <h1 className="reveal reveal-delay-1 text-[clamp(44px,7vw,88px)] leading-[1.05] tracking-[-0.03em] font-medium mb-6">
-            Find a startup co-founder.
-            <br />
-            <span className="text-signal-mint italic pr-2 font-normal">Leave with a venture-ready brief.</span>
+          <h1 className="reveal hero-title reveal-delay-1 text-[clamp(44px,7vw,88px)] leading-[1.05] tracking-[-0.03em] font-medium mb-6">
+            <span className="text-reveal-line">
+              <span>Find a startup co-founder.</span>
+            </span>
+            <span className="text-reveal-line">
+              <span className="text-signal-mint italic pr-2 font-normal">
+                Leave with a venture-ready brief.
+              </span>
+            </span>
           </h1>
 
-          <p className="reveal reveal-delay-2 text-[19px] md:text-[21px] text-white/60 max-w-[640px] leading-[1.6] mb-10 mx-auto">
+          <p className="reveal-blur reveal-delay-2 text-[19px] md:text-[21px] text-white/60 max-w-[640px] leading-[1.6] mb-10 mx-auto">
             NestBridge helps first-time founders find technical, business, and
             product co-founders through explainable compatibility signals, then
             turn a serious match into a crisp venture brief with roles,
@@ -126,7 +146,7 @@ function ProblemSection() {
   return (
     <section className="section bg-white py-[100px] md:py-[140px]">
       <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6">
-        <p className="reveal font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">The Problem</p>
+        <p className="reveal-clip font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">The Problem</p>
         <h2 className="reveal reveal-delay-1 text-[clamp(32px,5vw,52px)] text-ink-black mb-5 md:mb-6 max-w-[720px] text-center mx-auto leading-[1.15] tracking-[-0.02em] font-medium font-heading">
           Co-founder search is not a contact list.
           <br className="hidden md:block" /> It is startup team formation.
@@ -141,7 +161,7 @@ function ProblemSection() {
           {cards.map((c, i) => (
             <div
               key={i}
-              className={`reveal reveal-delay-${i + 2} bg-cloud border border-black/5 rounded-[20px] p-8 md:p-10 transition-transform duration-400 ease-[var(--ease-out-expo)] hover:-translate-y-1 hover:shadow-md`}
+              className={`reveal reveal-delay-${i + 2} motion-card bg-cloud border border-black/5 rounded-[20px] p-8 md:p-10 transition-transform duration-400 ease-[var(--ease-out-expo)] hover:-translate-y-1 hover:shadow-md`}
             >
               <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-bridge-green mb-8 shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
                 {c.icon}
@@ -192,7 +212,7 @@ function HowItWorksSection() {
   return (
     <section id="how-it-works" className="section bg-cloud py-[100px] md:py-[140px]">
       <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6">
-        <p className="reveal font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">How NestBridge Works</p>
+        <p className="reveal-clip font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">How NestBridge Works</p>
         <h2 className="reveal reveal-delay-1 text-[clamp(32px,5vw,52px)] text-ink-black mb-5 md:mb-6 max-w-[720px] text-center mx-auto leading-[1.15] tracking-[-0.02em] font-medium font-heading">
           From founder profile to investor-ready venture brief.
           <br className="hidden md:block" /> Built around the co-founder match.
@@ -202,7 +222,7 @@ function HowItWorksSection() {
           {steps.map((s, i) => (
             <div
               key={i}
-              className={`reveal reveal-delay-${i + 1} flex flex-col bg-white border border-black/5 rounded-[24px] p-6 transition-transform duration-400 ease-[var(--ease-out-expo)] hover:-translate-y-1 hover:shadow-md`}
+              className={`reveal reveal-delay-${i + 1} motion-card flex flex-col bg-white border border-black/5 rounded-[24px] p-6 transition-transform duration-400 ease-[var(--ease-out-expo)] hover:-translate-y-1 hover:shadow-md`}
             >
               <div className="relative aspect-video lg:aspect-square xl:aspect-[4/3] rounded-[16px] overflow-hidden mb-6 bg-mist shadow-sm">
                 <Image
@@ -241,7 +261,7 @@ function ShowcaseSection() {
       <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <div className="text-left">
-            <p className="reveal font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-signal-mint mb-5 text-left ml-0">
+            <p className="reveal-clip font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-signal-mint mb-5 text-left ml-0">
               Venture Brief Builder
             </p>
             <h2 className="reveal reveal-delay-1 text-[clamp(32px,5vw,52px)] text-paper-white mb-5 md:mb-6 max-w-[720px] text-left ml-0 leading-[1.15] tracking-[-0.02em] font-medium font-heading">
@@ -271,7 +291,7 @@ function ShowcaseSection() {
           </div>
 
           <div className="reveal-scale relative">
-            <div className="bg-white rounded-[16px] shadow-lg overflow-hidden border border-black/5 transform md:rotate-[2deg] transition-transform duration-700 hover:rotate-0 hover:shadow-xl">
+            <div className="motion-card bg-white rounded-[16px] shadow-lg overflow-hidden border border-black/5 transform md:rotate-[2deg] transition-transform duration-700 hover:rotate-0 hover:shadow-xl">
               <div className="bg-[#F2F4F3] border-b border-black/5 px-4 py-3 flex gap-2">
                 <div className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]" />
                 <div className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]" />
@@ -328,7 +348,7 @@ function DifferentiatorSection() {
   return (
     <section className="section bg-white py-[100px] md:py-[140px]">
       <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6">
-        <p className="reveal font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">Why NestBridge</p>
+        <p className="reveal-clip font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">Why NestBridge</p>
         <h2 className="reveal reveal-delay-1 text-[clamp(32px,5vw,52px)] text-ink-black mb-5 md:mb-6 max-w-[720px] text-center mx-auto leading-[1.15] tracking-[-0.02em] font-medium font-heading">
           Built for startup team formation,
           <br className="hidden md:block" /> not another chat thread.
@@ -343,7 +363,7 @@ function DifferentiatorSection() {
             </div>
           </div>
           {rows.map((r, i) => (
-            <div key={i} className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr_1.5fr] items-center px-6 py-5 md:py-6 border-b border-black/5 last:border-b-0 gap-2 md:gap-4 transition-colors hover:bg-[#fafafa]">
+            <div key={i} className="motion-row grid grid-cols-1 md:grid-cols-[1.2fr_1fr_1.5fr] items-center px-6 py-5 md:py-6 border-b border-black/5 last:border-b-0 gap-2 md:gap-4 transition-colors hover:bg-[#fafafa]">
               <div className="font-heading text-[18px] text-ink-black font-medium">{r.name}</div>
               <div className="text-[14px] text-slate md:text-[15px]">{r.them}</div>
               <div className="text-[14px] font-medium text-bridge-green md:text-[15px]">{r.us}</div>
@@ -398,7 +418,7 @@ function FeaturesSection() {
   return (
     <section id="features" className="section bg-cloud py-[100px] md:py-[140px]">
       <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6">
-        <p className="reveal font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">Features</p>
+        <p className="reveal-clip font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">Features</p>
         <h2 className="reveal reveal-delay-1 text-[clamp(32px,5vw,52px)] text-ink-black mb-5 md:mb-6 max-w-[720px] text-center mx-auto leading-[1.15] tracking-[-0.02em] font-medium font-heading">
           Co-founder matching features built
           <br className="hidden md:block" /> for early-stage startup teams.
@@ -408,7 +428,7 @@ function FeaturesSection() {
           {features.map((f, i) => (
             <div
               key={i}
-              className={`reveal reveal-delay-${(i % 3) + 1} p-4`}
+              className={`reveal reveal-delay-${(i % 3) + 1} motion-card rounded-[18px] p-4`}
             >
               <div className="w-12 h-12 rounded-full bg-bridge-green/10 flex items-center justify-center text-bridge-green mb-5">
                 {f.icon}
@@ -458,7 +478,7 @@ function PricingSection() {
   return (
     <section id="pricing" className="section bg-cloud py-[100px] md:py-[140px]">
       <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6">
-        <p className="reveal font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">Pricing</p>
+        <p className="reveal-clip font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">Pricing</p>
         <h2 className="reveal reveal-delay-1 text-[clamp(32px,5vw,52px)] text-ink-black mb-5 md:mb-6 max-w-[720px] text-center mx-auto leading-[1.15] tracking-[-0.02em] font-medium font-heading">
           Free co-founder matching to start.
           <br className="hidden md:block" /> Premium venture-building when you need speed.
@@ -466,7 +486,7 @@ function PricingSection() {
 
         <div className="flex flex-col md:flex-row justify-center gap-8 max-w-[900px] mx-auto mt-[60px] md:mt-[80px]">
           {/* Free */}
-          <div className="reveal reveal-delay-2 flex-1 bg-white border border-black/5 rounded-[24px] p-8 md:p-10 flex flex-col relative transition-shadow duration-300 hover:shadow-md">
+          <div className="reveal reveal-delay-2 motion-card flex-1 bg-white border border-black/5 rounded-[24px] p-8 md:p-10 flex flex-col relative transition-shadow duration-300 hover:shadow-md">
             <div className="mb-6 pb-6 border-b border-black/5">
               <h3 className="font-accent text-[20px] font-medium text-slate mb-2">Free Founder Matching</h3>
               <div className="font-heading text-[48px] text-ink-black leading-none">
@@ -485,7 +505,7 @@ function PricingSection() {
           </div>
 
           {/* Premium */}
-          <div className="reveal reveal-delay-3 flex-1 bg-ink-black text-paper-white rounded-[24px] p-8 md:p-10 flex flex-col relative md:-translate-y-4 shadow-lg border border-white/10 transition-transform duration-300 hover:-translate-y-6">
+          <div className="reveal reveal-delay-3 motion-card flex-1 bg-ink-black text-paper-white rounded-[24px] p-8 md:p-10 flex flex-col relative md:-translate-y-4 shadow-lg border border-white/10 transition-transform duration-300 hover:-translate-y-6">
             <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-premium-gold to-[#E5C78A] text-ink-black font-accent text-[12px] font-bold uppercase tracking-[0.08em] px-4 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm">
               <Star size={12} fill="currentColor" /> Most Popular
             </div>
@@ -579,7 +599,7 @@ function FaqSection() {
   return (
     <section id="faq" className="section bg-white py-[100px] md:py-[140px]">
       <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6">
-        <p className="reveal font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">FAQ</p>
+        <p className="reveal-clip font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">FAQ</p>
         <h2 className="reveal reveal-delay-1 text-[clamp(32px,5vw,52px)] text-ink-black mb-5 md:mb-6 max-w-[720px] text-center mx-auto leading-[1.15] tracking-[-0.02em] font-medium font-heading">
           Co-Founder Matching FAQ
         </h2>

@@ -4,8 +4,7 @@ import { useEffect, useRef } from "react";
 
 /**
  * Intersection Observer hook that adds a `visible` class
- * to every `.reveal`, `.reveal-scale`, and `.reveal-fade` element
- * once it enters the viewport.
+ * to motion elements once they enter the viewport.
  */
 export function useRevealOnScroll() {
   const initialized = useRef(false);
@@ -26,8 +25,8 @@ export function useRevealOnScroll() {
       { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
     );
 
-    const targets = document.querySelectorAll(
-      ".reveal, .reveal-scale, .reveal-fade"
+    const targets = document.querySelectorAll<HTMLElement>(
+      ".reveal, .reveal-scale, .reveal-fade, .reveal-clip, .reveal-blur, .reveal-stagger"
     );
     targets.forEach((el) => observer.observe(el));
 
