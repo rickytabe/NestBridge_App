@@ -8,7 +8,7 @@ export function Footer() {
 
   return (
     <footer className="bg-ink-black text-slate pt-20 pb-10">
-      <div className="container grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1fr] gap-12 pb-15 border-b border-white/5">
+      <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6 grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1fr] gap-12 pb-15 border-b border-white/5">
         <div className="flex flex-col gap-4">
           <Image
             src="/nestlogo.png"
@@ -18,32 +18,32 @@ export function Footer() {
             className="h-9 w-auto object-contain brightness-0 invert"
           />
           <p className="font-accent text-[15px] text-signal-mint/80">
-            Connecting Ideas. Building Futures.
+            Co-founder matching and venture briefs for first-time founders.
           </p>
         </div>
 
         <div className="flex flex-col gap-3.5">
-          <h4 className="font-accent text-[13px] font-semibold text-paper-white uppercase tracking-[0.08em] mb-1">Product</h4>
+          <p className="font-accent text-[13px] font-semibold text-paper-white uppercase tracking-[0.08em] mb-1">Product</p>
           <a href="#how-it-works" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint">How It Works</a>
           <a href="#features" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint">Features</a>
           <a href="#pricing" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint">Pricing</a>
         </div>
 
         <div className="flex flex-col gap-3.5">
-          <h4 className="font-accent text-[13px] font-semibold text-paper-white uppercase tracking-[0.08em] mb-1">Company</h4>
+          <p className="font-accent text-[13px] font-semibold text-paper-white uppercase tracking-[0.08em] mb-1">Company</p>
           <a href="#" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint">About</a>
           <a href="#" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint">Contact</a>
           <a href="#" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint">Careers</a>
         </div>
 
         <div className="flex flex-col gap-3.5">
-          <h4 className="font-accent text-[13px] font-semibold text-paper-white uppercase tracking-[0.08em] mb-1">Legal</h4>
+          <p className="font-accent text-[13px] font-semibold text-paper-white uppercase tracking-[0.08em] mb-1">Legal</p>
           <a href="#" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint">Terms of Service</a>
           <a href="#" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint">Privacy Policy</a>
         </div>
       </div>
 
-      <div className="container flex flex-col md:flex-row items-center md:justify-between gap-4 pt-8 text-[13px] text-white/30">
+      <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6 flex flex-col md:flex-row items-center md:justify-between gap-4 pt-8 text-[13px] text-white/30">
         <p>© {year} NestBridge. All rights reserved.</p>
         <div className="flex gap-5">
           <a href="#" aria-label="LinkedIn" className="text-white/30 transition-all duration-200 hover:text-signal-mint hover:-translate-y-0.5">

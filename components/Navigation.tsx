@@ -22,15 +22,15 @@ export function Navigation() {
           : "bg-transparent py-2.5"
       } md:top-6 md:left-1/2 md:-translate-x-1/2 md:w-[calc(100%-48px)] md:max-w-[1200px] md:rounded-full`}
     >
-      <div className="mx-auto px-6 md:px-8 xl:px-6 flex items-center justify-between h-[72px]">
+      <div className="mx-auto px-6 md:px-8 xl:px-6 flex items-center justify-between h-[60px]">
         <a href="#" className="flex items-center shrink-0">
           <Image
             src="/nestlogo.png"
             alt="NestBridge"
-            width={240}
-            height={72}
+            width={100}
+            height={100}
             priority
-            className="h-[60px] w-auto object-contain"
+            className="h-[100px] w-[100px] object-contain -mt-8"
           />
         </a>
 
@@ -75,7 +75,7 @@ export function Navigation() {
             href="#"
             className="hidden md:inline-flex items-center justify-center font-accent text-[13px] font-semibold px-5 py-2 rounded-full bg-bridge-green text-paper-white transition-all duration-300 tracking-[0.02em] hover:bg-forest hover:-translate-y-0.5 hover:shadow-[0_4px_16px_rgba(15,122,74,0.3)]"
           >
-            Get Started
+            Find a Co-Founder
           </a>
           <button
             className={`flex md:hidden items-center justify-center bg-transparent border-none cursor-pointer p-1 ${
