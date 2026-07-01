@@ -505,7 +505,7 @@ function PricingSection() {
           <br className="hidden md:block" /> Premium venture-building when you need speed.
         </h2>
 
-        <div className="flex flex-col md:flex-row justify-center gap-8 max-w-[900px] mx-auto mt-[60px] md:mt-[80px]">
+        <div className="flex flex-col md:flex-row justify-center gap-12 md:gap-8 max-w-[900px] mx-auto mt-[60px] md:mt-[80px]">
           {/* Free */}
           <div className="reveal reveal-delay-2 motion-card flex-1 bg-white border border-black/5 rounded-[24px] p-8 md:p-10 flex flex-col relative transition-shadow duration-300 hover:shadow-md">
             <div className="mb-6 pb-6 border-b border-black/5">
@@ -526,10 +526,11 @@ function PricingSection() {
           </div>
 
           {/* Premium */}
-          <div className="reveal reveal-delay-3 motion-card flex-1 bg-ink-black text-paper-white rounded-[24px] p-8 md:p-10 flex flex-col relative md:-translate-y-4 shadow-lg border border-white/10 transition-transform duration-300 hover:-translate-y-6">
-            <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-premium-gold to-[#E5C78A] text-ink-black font-accent text-[12px] font-bold uppercase tracking-[0.08em] px-4 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm">
+          <div className="reveal reveal-delay-3 flex-1 flex flex-col relative mt-8 md:mt-0 md:-translate-y-4 transition-transform duration-300 hover:-translate-y-6">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-premium-gold to-[#E5C78A] text-ink-black font-accent text-[12px] font-bold uppercase tracking-[0.08em] px-4 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm z-20">
               <Star size={12} fill="currentColor" /> Most Popular
             </div>
+            <div className="motion-card flex-1 bg-ink-black text-paper-white rounded-[24px] p-8 pt-10 md:p-10 flex flex-col relative shadow-lg border border-white/10">
             <div className="mb-6 pb-6 border-b border-white/10">
               <h3 className="font-accent text-[20px] font-medium text-[#E5C78A] mb-2">Premium Venture Building</h3>
               <div className="font-heading text-[48px] text-white leading-none">
@@ -546,6 +547,7 @@ function PricingSection() {
             <a href="#" className="inline-flex items-center gap-2.5 font-accent font-semibold rounded-full bg-gradient-to-r from-premium-gold to-[#E5C78A] text-ink-black transition-all duration-300 ease-[var(--ease-out-expo)] border-none text-[15px] px-[28px] py-[14px] justify-center hover:opacity-90 hover:shadow-[0_4px_20px_rgba(212,175,106,0.3)] hover:-translate-y-[1px] mt-auto">
               Go Premium
             </a>
+            </div>
           </div>
         </div>
 
