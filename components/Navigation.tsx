@@ -32,7 +32,7 @@ export function Navigation() {
               width={100}
               height={100}
               priority
-              className="h-[100px] w-[100px] object-contain -mt-8"
+              className="h-[100px] w-[100px] object-contain"
             />
           </a>
 
