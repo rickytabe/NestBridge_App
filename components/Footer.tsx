@@ -24,9 +24,11 @@ export function Footer() {
 
         <div className="flex flex-col gap-3.5">
           <p className="font-accent text-[13px] font-semibold text-paper-white uppercase tracking-[0.08em] mb-1">Product</p>
-          <a href="#how-it-works" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint">How It Works</a>
-          <a href="#features" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint">Features</a>
-          <a href="#pricing" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint">Pricing</a>
+          <a href="/#how-it-works" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint">How It Works</a>
+          <a href="/#features" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint">Features</a>
+          <a href="/#pricing" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint">Pricing</a>
+          <a href="/coming-soon" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint">Log in</a>
+          <a href="/#waitlist" className="text-[14px] text-slate transition-colors duration-200 hover:text-signal-mint text-bridge-green font-medium">Join Waitlist</a>
         </div>
 
         <div className="flex flex-col gap-3.5">

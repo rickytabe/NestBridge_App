@@ -51,16 +51,16 @@ export function Navigation() {
 
           <div className="flex items-center gap-6">
             <a
-              href="#"
+              href="/coming-soon"
               className="hidden md:block font-accent text-[14px] font-medium transition-colors duration-200 text-slate hover:text-bridge-green"
             >
               Log in
             </a>
             <a
-              href="#"
+              href="/#waitlist"
               className="hidden md:inline-flex items-center justify-center font-accent text-[13px] font-semibold px-5 py-2 rounded-full bg-bridge-green text-paper-white transition-all duration-300 tracking-[0.02em] hover:bg-forest hover:-translate-y-0.5 hover:shadow-[0_4px_16px_rgba(15,122,74,0.3)]"
             >
-              Find a Co-Founder
+              Join Waitlist
             </a>
             <button
               className="flex md:hidden items-center justify-center bg-transparent border-none cursor-pointer p-1 text-ink-black hover:text-bridge-green transition-colors"
@@ -113,16 +113,18 @@ export function Navigation() {
 
         <div className="mt-auto flex flex-col gap-4">
           <a
-            href="#"
+            href="/coming-soon"
+            onClick={() => setMenuOpen(false)}
             className="w-full text-center font-accent text-[15px] font-medium py-3.5 rounded-full border border-black/10 text-ink-black hover:bg-cloud transition-colors"
           >
             Log in
           </a>
           <a
-            href="#"
+            href="/#waitlist"
+            onClick={() => setMenuOpen(false)}
             className="w-full text-center font-accent text-[15px] font-semibold py-3.5 rounded-full bg-bridge-green text-paper-white hover:bg-forest transition-colors shadow-sm"
           >
-            Find a Co-Founder
+            Join Waitlist
           </a>
         </div>
       </nav>

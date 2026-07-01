@@ -38,7 +38,7 @@ export default function Home() {
         <SocialProofSection />
         <PricingSection />
         <FaqSection />
-        <FinalCtaSection />
+        <WaitlistSection />
       </main>
       <Footer />
     </>
@@ -480,8 +480,8 @@ function SocialProofSection() {
               <br />
               matching on NestBridge.
             </h2>
-            <a href="#" className="inline-flex items-center gap-2.5 font-accent font-semibold rounded-full bg-bridge-green text-paper-white transition-all duration-300 ease-[var(--ease-out-expo)] border-none text-[17px] px-[36px] py-[18px] justify-center hover:bg-forest hover:-translate-y-[2px] hover:shadow-lg">
-              Claim Your Spot
+            <a href="#waitlist" className="inline-flex items-center gap-2.5 font-accent font-semibold rounded-full bg-bridge-green text-paper-white transition-all duration-300 ease-[var(--ease-out-expo)] border-none text-[17px] px-[36px] py-[18px] justify-center hover:bg-forest hover:-translate-y-[2px] hover:shadow-lg">
+              Join Waitlist
               <ArrowRight size={20} />
             </a>
           </div>
@@ -520,8 +520,8 @@ function PricingSection() {
               <li className="flex items-center gap-3 text-[15px] text-slate"><Check size={16} className="text-bridge-green" /> 1 venture brief</li>
               <li className="flex items-center gap-3 text-[15px] text-slate"><Check size={16} className="text-bridge-green" /> Shared team dashboard</li>
             </ul>
-            <a href="#" className="inline-flex items-center gap-2.5 font-accent font-semibold rounded-full bg-transparent border-2 border-slate/20 text-ink-black transition-all duration-300 ease-[var(--ease-out-expo)] text-[15px] px-[28px] py-[14px] justify-center hover:border-ink-black mt-auto">
-              Get Started Free
+            <a href="#waitlist" className="inline-flex items-center gap-2.5 font-accent font-semibold rounded-full bg-transparent border-2 border-slate/20 text-ink-black transition-all duration-300 ease-[var(--ease-out-expo)] text-[15px] px-[28px] py-[14px] justify-center hover:border-ink-black mt-auto">
+              Join Waitlist
             </a>
           </div>
 
@@ -544,8 +544,8 @@ function PricingSection() {
               <li className="flex items-center gap-3 text-[15px] text-white/80"><Check size={16} className="text-premium-gold" /> Verified badge</li>
               <li className="flex items-center gap-3 text-[15px] text-white/80"><Check size={16} className="text-premium-gold" /> Everything in Free</li>
             </ul>
-            <a href="#" className="inline-flex items-center gap-2.5 font-accent font-semibold rounded-full bg-gradient-to-r from-premium-gold to-[#E5C78A] text-ink-black transition-all duration-300 ease-[var(--ease-out-expo)] border-none text-[15px] px-[28px] py-[14px] justify-center hover:opacity-90 hover:shadow-[0_4px_20px_rgba(212,175,106,0.3)] hover:-translate-y-[1px] mt-auto">
-              Go Premium
+            <a href="#waitlist" className="inline-flex items-center gap-2.5 font-accent font-semibold rounded-full bg-gradient-to-r from-premium-gold to-[#E5C78A] text-ink-black transition-all duration-300 ease-[var(--ease-out-expo)] border-none text-[15px] px-[28px] py-[14px] justify-center hover:opacity-90 hover:shadow-[0_4px_20px_rgba(212,175,106,0.3)] hover:-translate-y-[1px] mt-auto">
+              Join Waitlist
             </a>
             </div>
           </div>
@@ -640,32 +640,65 @@ function FaqSection() {
   );
 }
 
-/* ───────────────────────── FINAL CTA ───────────────────────── */
-function FinalCtaSection() {
+/* ───────────────────────── WAITLIST ───────────────────────── */
+function WaitlistSection() {
   return (
-    <section className="bg-ink-black text-paper-white py-[100px] md:py-[140px] border-b border-white/5 relative overflow-hidden">
-      <div className="absolute inset-0 z-0 opacity-[0.15] mix-blend-screen pointer-events-none">
+    <section id="waitlist" className="bg-ink-black text-paper-white py-[100px] md:py-[140px] border-b border-white/5 relative overflow-hidden">
+      <div className="absolute inset-0 z-0 opacity-70 mix-blend-screen pointer-events-none">
         <DotGrid dotSize={2} gap={32} baseColor="#FFFFFF" activeColor="#3FE0A5" proximity={120} />
       </div>
-      <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6 text-center relative z-10">
-        <h2 className="reveal font-heading text-[clamp(36px,5vw,56px)] leading-[1.1] mb-6 max-w-[800px] mx-auto font-medium">
-          Find your startup co-founder.
-          <br />
-          <span className="text-signal-mint italic pr-2 font-normal">Start building today.</span>
-        </h2>
-        <p className="reveal reveal-delay-1 text-[18px] text-white/45 mb-10 max-w-[480px] mx-auto">
-          Create a founder profile, review compatibility-based matches, and
-          build your first venture brief for free.
-        </p>
-        <div className="reveal reveal-delay-2 flex justify-center mb-8">
-          <a href="#" className="inline-flex items-center gap-2.5 font-accent font-semibold rounded-full bg-bridge-green text-paper-white transition-all duration-300 ease-[var(--ease-out-expo)] border-none text-[17px] px-[36px] py-[18px] justify-center hover:bg-forest hover:-translate-y-[2px] hover:shadow-lg">
-            Get Started Free
-            <ArrowRight size={20} />
-          </a>
+      <div className="w-full max-w-[800px] mx-auto px-6 md:px-12 xl:px-6 text-center relative z-10">
+        <div className="inline-flex items-center justify-center bg-white/5 border border-white/10 rounded-full px-5 py-2 mb-8 reveal">
+          <span className="font-accent text-[13px] font-bold uppercase tracking-[0.15em] text-signal-mint">
+            Coming Soon
+          </span>
         </div>
-        <p className="reveal reveal-delay-3 text-[15px] text-white/40">
-          Already have an account? <a href="#" className="text-white hover:text-signal-mint transition-colors underline underline-offset-4 decoration-white/30">Log in</a>
+        
+        <h2 className="reveal reveal-delay-1 font-heading text-[clamp(36px,5vw,56px)] leading-[1.1] mb-6 font-medium">
+          Get early access to NestBridge.
+        </h2>
+        <p className="reveal reveal-delay-2 text-[18px] text-white/60 mb-12 max-w-[500px] mx-auto">
+          We're currently building the platform. Join the waitlist to be notified as soon as founder matching goes live.
         </p>
+        
+        <form 
+          action="https://formsubmit.co/rickytabe2@gmail.com" 
+          method="POST" 
+          className="reveal reveal-delay-3 w-full max-w-[500px] mx-auto bg-white/5 border border-white/10 p-6 md:p-8 rounded-[24px] shadow-2xl backdrop-blur-md flex flex-col gap-5 text-left"
+        >
+          {/* FormSubmit Config */}
+          <input type="hidden" name="_subject" value="New NestBridge Waitlist Submission!" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          
+          <div className="flex flex-col gap-2">
+            <label htmlFor="email" className="font-accent text-[14px] font-medium text-white/80">Email Address <span className="text-bridge-green">*</span></label>
+            <input 
+              type="email" 
+              name="email" 
+              id="email" 
+              required 
+              placeholder="founder@startup.com"
+              className="w-full bg-ink-black/50 border border-white/15 rounded-xl px-4 py-3.5 text-paper-white placeholder:text-white/30 focus:outline-none focus:border-bridge-green focus:ring-1 focus:ring-bridge-green transition-all"
+            />
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <label htmlFor="note" className="font-accent text-[14px] font-medium text-white/80">What are you building? <span className="text-white/40 font-normal">(Optional)</span></label>
+            <textarea 
+              name="note" 
+              id="note" 
+              rows={3}
+              placeholder="Tell us a bit about your idea or what kind of co-founder you're looking for..."
+              className="w-full bg-ink-black/50 border border-white/15 rounded-xl px-4 py-3.5 text-paper-white placeholder:text-white/30 focus:outline-none focus:border-bridge-green focus:ring-1 focus:ring-bridge-green transition-all resize-none"
+            ></textarea>
+          </div>
+          
+          <button type="submit" className="w-full flex items-center justify-center gap-2.5 font-accent font-semibold rounded-full bg-bridge-green text-paper-white transition-all duration-300 ease-[var(--ease-out-expo)] border-none text-[16px] px-[24px] py-[16px] hover:bg-forest hover:-translate-y-0.5 mt-2 shadow-[0_4px_16px_rgba(15,122,74,0.2)]">
+            Join Waitlist
+            <ArrowRight size={18} />
+          </button>
+        </form>
       </div>
       
       {/* Background radial gradient */}
