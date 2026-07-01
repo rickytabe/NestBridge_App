@@ -29,18 +29,31 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: "/favicon.png",
+    apple: "/favicon.png",
+  },
   openGraph: {
     title: "NestBridge | Co-Founder Matching for Startup Team Formation",
     description:
       "NestBridge helps first-time founders find compatible co-founders and turn serious matches into investor-ready venture briefs.",
     type: "website",
     siteName: "NestBridge",
+    images: [
+      {
+        url: "/favicon.png",
+        width: 1200,
+        height: 630,
+        alt: "NestBridge Co-Founder Matching",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "NestBridge | Co-Founder Matching for Startup Team Formation",
     description:
       "Find a compatible startup co-founder and shape the match into a venture-ready brief.",
+    images: ["/favicon.png"],
   },
 };
 
