@@ -16,6 +16,11 @@ import {
   ChevronDown,
   Check,
   Star,
+  Globe,
+  Briefcase,
+  Store,
+  DollarSign,
+  TrendingUp,
 } from "lucide-react";
 import { Navigation } from "../components/Navigation";
 import { Footer } from "../components/Footer";
@@ -78,40 +83,37 @@ function HeroSection() {
       <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6 relative z-10 pt-[140px] pb-[100px] flex flex-col items-center">
         <div className="max-w-[800px] text-center flex flex-col items-center">
           <span className="reveal-clip inline-block px-4 py-1.5 rounded-full border border-white/15 bg-white/5 font-accent text-[13px] font-medium tracking-[0.06em] uppercase text-white/80 mb-8 backdrop-blur-md">
-            Founder compatibility matching for serious startup teams
+            The Operating System of Modern Entrepreneurship
           </span>
 
           <h1 className="reveal hero-title reveal-delay-1 text-[clamp(44px,7vw,88px)] leading-[1.05] tracking-[-0.03em] font-medium mb-6">
             <span className="text-reveal-line">
-              <span>Find a startup co-founder.</span>
+              <span>Your Complete AI</span>
             </span>
             <span className="text-reveal-line">
               <span className="text-signal-mint italic pr-2 font-normal">
-                Leave with a venture-ready brief.
+                Business Ecosystem.
               </span>
             </span>
           </h1>
 
           <p className="reveal-blur reveal-delay-2 text-[19px] md:text-[21px] text-white/60 max-w-[640px] leading-[1.6] mb-10 mx-auto">
-            NestBridge helps first-time founders find technical, business, and
-            product co-founders through explainable compatibility signals, then
-            turn a serious match into a crisp venture brief with roles,
-            roadmap, market, and next-step proof points.
+            NestBridge connects multiple business functions into one intelligent environment. Create, fund, manage, expand, and sustain your business without relying on dozens of disconnected apps.
           </p>
 
           <div className="reveal reveal-delay-3 flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto mb-16">
-            <a href="#" className="inline-flex items-center gap-2.5 font-accent font-semibold rounded-full bg-bridge-green text-paper-white transition-all duration-300 ease-[var(--ease-out-expo)] border-none text-[17px] px-[36px] py-[18px] w-full sm:w-auto justify-center hover:bg-forest hover:-translate-y-[2px] hover:shadow-lg">
-              Find a Serious Co-Founder
+            <a href="#how-it-works" className="inline-flex items-center gap-2.5 font-accent font-semibold rounded-full bg-bridge-green text-paper-white transition-all duration-300 ease-[var(--ease-out-expo)] border-none text-[17px] px-[36px] py-[18px] w-full sm:w-auto justify-center hover:bg-forest hover:-translate-y-[2px] hover:shadow-lg">
+              Explore the Ecosystem
               <ArrowRight size={18} />
             </a>
-            <a href="#how-it-works" className="inline-flex items-center gap-2.5 font-accent font-semibold rounded-full bg-white/10 text-paper-white transition-all duration-300 ease-[var(--ease-out-expo)] border border-white/10 text-[17px] px-[36px] py-[18px] w-full sm:w-auto justify-center hover:bg-white/15 hover:-translate-y-[2px]">
-              See Founder Matching
+            <a href="#pricing" className="inline-flex items-center gap-2.5 font-accent font-semibold rounded-full bg-white/10 text-paper-white transition-all duration-300 ease-[var(--ease-out-expo)] border border-white/10 text-[17px] px-[36px] py-[18px] w-full sm:w-auto justify-center hover:bg-white/15 hover:-translate-y-[2px]">
+              Start Building Free
             </a>
           </div>
 
           <p className="reveal reveal-delay-4 text-[14px] text-white/30 font-accent tracking-[0.02em]">
-            Free founder profile&nbsp;&nbsp;·&nbsp;&nbsp;Compatibility-based matching
-            &nbsp;&nbsp;·&nbsp;&nbsp;Venture brief included
+            Build Teams&nbsp;&nbsp;·&nbsp;&nbsp;Raise Capital
+            &nbsp;&nbsp;·&nbsp;&nbsp;Launch Storefronts
           </p>
         </div>
       </div>
@@ -127,19 +129,19 @@ function HeroSection() {
 function ProblemSection() {
   const cards = [
     {
-      icon: <Search size={24} />,
-      title: "Find a technical co-founder",
-      text: "Search by complementary skills, startup stage, industry focus, and founder intent without turning your week into cold outreach.",
-    },
-    {
-      icon: <MessageCircle size={24} />,
-      title: "Qualify serious founder matches",
-      text: "Move beyond the first message with conversations built around compatibility, commitment, roles, and ownership.",
-    },
-    {
       icon: <FileText size={24} />,
-      title: "Make your startup easy to believe",
-      text: "Shape a raw idea into a concise venture brief with market, customer, positioning, roadmap, and next steps.",
+      title: "Data Fragmentation",
+      text: "Stop jumping between accounting software, CRM, and documents. Centralize everything in one operating system.",
+    },
+    {
+      icon: <DollarSign size={24} />,
+      title: "Higher Costs",
+      text: "Eliminate dozens of separate subscriptions for networking, analytics, legal, and communication tools.",
+    },
+    {
+      icon: <Users size={24} />,
+      title: "Poor Collaboration",
+      text: "Keep investors, team members, and partners aligned in one trusted environment without communication delays.",
     },
   ];
 
@@ -151,13 +153,11 @@ function ProblemSection() {
       <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6 relative z-10">
         <p className="reveal-clip font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">The Problem</p>
         <h2 className="reveal reveal-delay-1 text-[clamp(32px,5vw,52px)] text-ink-black mb-5 md:mb-6 max-w-[720px] text-center mx-auto leading-[1.15] tracking-[-0.02em] font-medium font-heading">
-          Co-founder search is not a contact list.
-          <br className="hidden md:block" /> It is startup team formation.
+          Stop managing subscriptions.
+          <br className="hidden md:block" /> Start building your business.
         </h2>
         <p className="reveal reveal-delay-2 text-[18px] md:text-[19px] text-slate max-w-[580px] leading-[1.7] text-center mx-auto mb-[60px] md:mb-[80px]">
-          NestBridge helps first-time founders find compatible people, test the
-          founder fit, and leave with a venture-ready brief instead of another
-          dead-end chat thread.
+          NestBridge addresses one of the largest inefficiencies in modern entrepreneurship: Fragmentation. Reclaim your lost productivity and focus on innovation instead of administration.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-[1100px] mx-auto">
@@ -188,26 +188,26 @@ function HowItWorksSection() {
   const steps = [
     {
       num: "01",
-      title: "Create your founder profile",
-      text: "Share what you are building, your skills, your stage, and the kind of co-founder who would make the startup real.",
+      title: "Build Professional Teams",
+      text: "Discover co-founders, hire global talent, and build professional communities tailored to your industry.",
       img: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80",
     },
     {
       num: "02",
-      title: "Review explainable co-founder matches",
-      text: "Every match shows visible reasons: complementary skills, same startup stage, shared industry, or nearby location.",
+      title: "Develop AI Strategies",
+      text: "Generate business plans and receive financial forecasts with our intelligent AI assistance.",
       img: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80",
     },
     {
       num: "03",
-      title: "Build the venture brief from the match",
-      text: "Capture what both founders decide: roles, customer pain, market, business model, validation roadmap, and next steps.",
+      title: "Raise Capital & Offer Shares",
+      text: "Find investors, raise capital legally, and offer company shares in compliance with applicable regulations.",
       img: "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?auto=format&fit=crop&w=800&q=80",
     },
     {
       num: "04",
-      title: "Share an accelerator-ready team profile",
-      text: "Your venture brief becomes a public team profile you can screenshot, share, and pin to accelerator applications.",
+      title: "Launch & Sell Globally",
+      text: "Launch digital storefronts, manage commerce, and expand your operations internationally in one place.",
       img: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80",
     },
   ];
@@ -220,8 +220,8 @@ function HowItWorksSection() {
       <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6 relative z-10">
         <p className="reveal-clip font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">How NestBridge Works</p>
         <h2 className="reveal reveal-delay-1 text-[clamp(32px,5vw,52px)] text-ink-black mb-5 md:mb-6 max-w-[720px] text-center mx-auto leading-[1.15] tracking-[-0.02em] font-medium font-heading">
-          From founder profile to investor-ready venture brief.
-          <br className="hidden md:block" /> Built around the co-founder match.
+          Infrastructure for Entrepreneurship.
+          <br className="hidden md:block" /> From idea to international expansion.
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 mt-[60px] md:mt-[80px]">
@@ -251,7 +251,7 @@ function HowItWorksSection() {
 
         <div className="reveal text-center mt-16 md:mt-[80px]">
           <a href="#" className="inline-flex items-center gap-2.5 font-accent font-semibold rounded-full bg-bridge-green text-paper-white transition-all duration-300 ease-[var(--ease-out-expo)] border-none text-[15px] px-[28px] py-[14px] hover:bg-forest hover:-translate-y-0.5 hover:shadow-lg">
-            Start Co-Founder Matching Free
+            Start Your Journey
             <ArrowRight size={18} />
           </a>
         </div>
@@ -271,30 +271,28 @@ function ShowcaseSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <div className="text-left">
             <p className="reveal-clip font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-signal-mint mb-5 text-left ml-0">
-              Venture Brief Builder
+              The Startup OS
             </p>
             <h2 className="reveal reveal-delay-1 text-[clamp(32px,5vw,52px)] text-paper-white mb-5 md:mb-6 max-w-[720px] text-left ml-0 leading-[1.15] tracking-[-0.02em] font-medium font-heading">
-              A founder brief built from the match,
-              <br />not a chatbot prompt.
+              Everything to manage your venture,
+              <br />in one intelligent platform.
             </h2>
             <p className="reveal reveal-delay-2 text-[17px] text-white/55 leading-[1.7] mt-5 max-w-[500px]">
-              Chatbots summarize what one person types. NestBridge structures
-              what two founders decide together: roles, market, customer pain,
-              business model, validation roadmap, and proof points.
+              Access AI guidance, financial tools, team building, legal support, networking, and marketplace services in an integrated ecosystem that adapts to your growth.
             </p>
 
             <div className="reveal reveal-delay-3 flex flex-wrap gap-8 md:gap-12 mt-12 pt-10 border-t border-white/10">
               <div className="flex flex-col gap-1">
-                <span className="font-accent text-[28px] font-semibold text-paper-white">Minutes</span>
-                <span className="text-[13px] text-signal-mint font-medium tracking-[0.05em] uppercase">not weeks</span>
+                <span className="font-accent text-[28px] font-semibold text-paper-white">Growth</span>
+                <span className="text-[13px] text-signal-mint font-medium tracking-[0.05em] uppercase">Built-in AI</span>
               </div>
               <div className="flex flex-col gap-1">
-                <span className="font-accent text-[28px] font-semibold text-paper-white">Role clarity</span>
-                <span className="text-[13px] text-signal-mint font-medium tracking-[0.05em] uppercase">before the build</span>
+                <span className="font-accent text-[28px] font-semibold text-paper-white">Capital</span>
+                <span className="text-[13px] text-signal-mint font-medium tracking-[0.05em] uppercase">Compliant funding</span>
               </div>
               <div className="flex flex-col gap-1">
-                <span className="font-accent text-[28px] font-semibold text-paper-white">Investor-ready</span>
-                <span className="text-[13px] text-signal-mint font-medium tracking-[0.05em] uppercase">one-page brief</span>
+                <span className="font-accent text-[28px] font-semibold text-paper-white">Scale</span>
+                <span className="text-[13px] text-signal-mint font-medium tracking-[0.05em] uppercase">Global reach</span>
               </div>
             </div>
           </div>
@@ -307,23 +305,25 @@ function ShowcaseSection() {
                 <div className="w-2.5 h-2.5 rounded-full bg-[#27C93F]" />
               </div>
               <div className="p-8 md:p-10 text-ink-black bg-white">
-                <h3 className="font-heading text-[22px] border-b border-black/5 pb-4 mb-6 text-ink-black font-medium">Venture Brief Snapshot</h3>
+                <h3 className="font-heading text-[22px] border-b border-black/5 pb-4 mb-6 text-ink-black font-medium">Business Dashboard</h3>
                 <div className="mb-6">
-                  <strong className="block font-accent text-[12px] uppercase tracking-[0.08em] text-light-slate mb-1">Problem</strong>
-                  <p className="text-[15px] text-slate leading-[1.5]">First-time founders can&apos;t find co-founders or articulate their idea.</p>
+                  <strong className="block font-accent text-[12px] uppercase tracking-[0.08em] text-light-slate mb-1">Fundraising Status</strong>
+                  <p className="text-[15px] text-slate leading-[1.5] flex items-center justify-between">
+                    <span>Pre-Seed Round</span>
+                    <span className="text-bridge-green font-bold">$250K / $500K</span>
+                  </p>
+                  <div className="w-full bg-mist h-2 rounded-full mt-2 overflow-hidden">
+                    <div className="bg-bridge-green h-full w-1/2"></div>
+                  </div>
                 </div>
                 <div className="mb-6">
-                  <strong className="block font-accent text-[12px] uppercase tracking-[0.08em] text-light-slate mb-1">Solution</strong>
-                  <p className="text-[15px] text-slate leading-[1.5]">Compatibility-based matching plus a shareable venture brief.</p>
-                </div>
-                <div className="mb-6">
-                  <strong className="block font-accent text-[12px] uppercase tracking-[0.08em] text-light-slate mb-1">Next Steps</strong>
-                  <p className="text-[15px] text-slate leading-[1.5]">1. Validate with 10 target users &nbsp;2. Build MVP &nbsp;3. Apply to YC</p>
+                  <strong className="block font-accent text-[12px] uppercase tracking-[0.08em] text-light-slate mb-1">AI Strategy Forecast</strong>
+                  <p className="text-[15px] text-slate leading-[1.5]">Revenue projected to increase 15% with international expansion into the European market.</p>
                 </div>
                 <div className="flex flex-wrap gap-2 pt-2">
-                  <span className="bg-mist text-slate font-accent text-[12px] font-medium px-3 py-1 rounded-full">SaaS</span>
-                  <span className="bg-mist text-slate font-accent text-[12px] font-medium px-3 py-1 rounded-full">Global</span>
-                  <span className="bg-mist text-slate font-accent text-[12px] font-medium px-3 py-1 rounded-full">Pre-seed</span>
+                  <span className="bg-mist text-slate font-accent text-[12px] font-medium px-3 py-1 rounded-full">Legal Docs</span>
+                  <span className="bg-mist text-slate font-accent text-[12px] font-medium px-3 py-1 rounded-full">Storefront</span>
+                  <span className="bg-mist text-slate font-accent text-[12px] font-medium px-3 py-1 rounded-full">Team Chat</span>
                 </div>
               </div>
             </div>
@@ -338,19 +338,24 @@ function ShowcaseSection() {
 function DifferentiatorSection() {
   const rows = [
     {
-      name: "Generic matching apps",
-      them: "Give you profiles and messages",
-      us: "Prioritize founder compatibility, commitment, and team fit",
+      name: "LinkedIn",
+      them: "Connect professionals and find jobs",
+      us: "Build companies, find investors, and manage business growth",
     },
     {
-      name: "AI chatbots",
-      them: "Generate text from a solo prompt",
-      us: "Turn matched founder decisions into a structured venture brief",
+      name: "AngelList",
+      them: "Connect startups with investors",
+      us: "Prepare businesses with AI guidance, team building, and legal support before fundraising",
     },
     {
-      name: "Pitch deck templates",
-      them: "Polish the story after the team exists",
-      us: "Clarify team, market, offer, and roadmap before the deck",
+      name: "Shopify",
+      them: "Enable online commerce",
+      us: "Enable commerce while supporting networking, investment, and collaboration",
+    },
+    {
+      name: "Zoom & Slack",
+      them: "Provide isolated communication",
+      us: "Integrate video and messaging directly into your business workflow and documents",
     },
   ];
 
@@ -362,16 +367,16 @@ function DifferentiatorSection() {
       <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6 relative z-10">
         <p className="reveal-clip font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">Why NestBridge</p>
         <h2 className="reveal reveal-delay-1 text-[clamp(32px,5vw,52px)] text-ink-black mb-5 md:mb-6 max-w-[720px] text-center mx-auto leading-[1.15] tracking-[-0.02em] font-medium font-heading">
-          Built for startup team formation,
-          <br className="hidden md:block" /> not another chat thread.
+          We adapt software to entrepreneurs.
+          <br className="hidden md:block" /> Not the other way around.
         </h2>
 
         <div className="reveal reveal-delay-2 max-w-[900px] mx-auto mt-[60px] md:mt-[80px] bg-white rounded-[24px] border border-black/5 overflow-hidden shadow-sm">
           <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr_1.5fr] items-center bg-cloud border-b border-black/5 px-6 py-4">
             <div className="hidden md:block" />
-              <div className="hidden md:block font-accent text-[12px] font-bold uppercase tracking-[0.08em] text-light-slate">They help you...</div>
+              <div className="hidden md:block font-accent text-[12px] font-bold uppercase tracking-[0.08em] text-light-slate">Existing Platforms</div>
             <div className="hidden md:block font-accent text-[12px] font-bold uppercase tracking-[0.08em] text-bridge-green bg-bridge-green/10 rounded-full px-4 py-1.5 w-max">
-              NestBridge helps you...
+              NestBridge's Approach
             </div>
           </div>
           {rows.map((r, i) => (
@@ -384,8 +389,7 @@ function DifferentiatorSection() {
         </div>
 
         <p className="reveal reveal-delay-3 max-w-[700px] mx-auto text-center mt-12 text-[20px] md:text-[24px] font-heading italic text-light-slate leading-[1.5]">
-          &ldquo;NestBridge helps founders prove the match, clarify the venture,
-          and show up ready for mentors, investors, and accelerators.&rdquo;
+          &ldquo;NestBridge combines artificial intelligence, networking, commerce, investment, and growth into one intelligent platform.&rdquo;
         </p>
       </div>
     </section>
@@ -397,33 +401,33 @@ function FeaturesSection() {
   const features = [
     {
       icon: <Users size={24} />,
-      title: "Founder Profiles With Match Signals",
-      text: "Photo, bio, skills, industry interests, location, and stage give co-founder matching real signal.",
+      title: "Global Talent & Community",
+      text: "Connect with developers, designers, marketers, and advisors to collaborate regardless of location.",
+    },
+    {
+      icon: <Briefcase size={24} />,
+      title: "Access to Capital",
+      text: "Connect with angel investors, VC firms, and raise capital by offering shares through compliant mechanisms.",
     },
     {
       icon: <Sparkles size={24} />,
-      title: "Explainable Co-Founder Matching",
-      text: "Every match shows exactly why it fits: complementary skills, shared market, same stage, or nearby city.",
+      title: "AI Business Strategies",
+      text: "Transform ideas into successful businesses with AI-powered tools and intelligent guided workflows.",
+    },
+    {
+      icon: <TrendingUp size={24} />,
+      title: "Financial Forecasting",
+      text: "Offer advanced business intelligence, financial forecasting, and expansion strategies that evolve with you.",
+    },
+    {
+      icon: <Store size={24} />,
+      title: "Digital Storefronts",
+      text: "Launch your storefront, sell products, and conduct live demonstrations directly to your professional community.",
     },
     {
       icon: <Shield size={24} />,
-      title: "Mutual-Interest Founder Messaging",
-      text: "Connect directly once there is mutual interest, so founder conversations stay warm and relevant.",
-    },
-    {
-      icon: <Zap size={24} />,
-      title: "Venture Brief Builder",
-      text: "Capture role clarity, customer pain, market, business model, validation roadmap, and proof points in one shareable brief.",
-    },
-    {
-      icon: <LayoutDashboard size={24} />,
-      title: "Startup Team Dashboard",
-      text: "Track goals and milestones together, tied to the venture brief your founder team created.",
-    },
-    {
-      icon: <Share2 size={24} />,
-      title: "Shareable Founder Team Profile",
-      text: "Turn your venture brief into a public team profile to send, post, or pin to applications.",
+      title: "Secure Operations",
+      text: "Manage documents, access legal resources, and communicate safely with strong verification and fraud prevention.",
     },
   ];
 
@@ -435,8 +439,8 @@ function FeaturesSection() {
       <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6 relative z-10">
         <p className="reveal-clip font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">Features</p>
         <h2 className="reveal reveal-delay-1 text-[clamp(32px,5vw,52px)] text-ink-black mb-5 md:mb-6 max-w-[720px] text-center mx-auto leading-[1.15] tracking-[-0.02em] font-medium font-heading">
-          Co-founder matching features built
-          <br className="hidden md:block" /> for early-stage startup teams.
+          Every essential business service,
+          <br className="hidden md:block" /> without leaving the platform.
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10 md:gap-y-12 mt-[60px] md:mt-[80px]">
@@ -469,19 +473,19 @@ function SocialProofSection() {
         <div className="reveal-scale relative rounded-[32px] overflow-hidden min-h-[400px] md:min-h-[500px] flex items-center justify-center py-20 px-6 max-w-[1200px] mx-auto shadow-sm">
           <Image
             src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1600&q=80"
-            alt="Founders collaborating"
+            alt="Entrepreneurs growing businesses"
             fill
             className="object-cover"
           />
           <div className="absolute inset-0 bg-ink-black/60 mix-blend-multiply" />
           <div className="relative z-10 max-w-[600px] flex flex-col items-center">
             <h2 className="font-heading text-[clamp(32px,4vw,48px)] leading-[1.15] text-paper-white mb-8 font-medium tracking-[-0.01em]">
-              Join the first 500 founders
+              Join thousands of businesses
               <br />
-              matching on NestBridge.
+              growing on NestBridge.
             </h2>
             <a href="#waitlist" className="inline-flex items-center gap-2.5 font-accent font-semibold rounded-full bg-bridge-green text-paper-white transition-all duration-300 ease-[var(--ease-out-expo)] border-none text-[17px] px-[36px] py-[18px] justify-center hover:bg-forest hover:-translate-y-[2px] hover:shadow-lg">
-              Join Waitlist
+              Join the Waitlist
               <ArrowRight size={20} />
             </a>
           </div>
@@ -501,59 +505,58 @@ function PricingSection() {
       <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6 relative z-10">
         <p className="reveal-clip font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">Pricing</p>
         <h2 className="reveal reveal-delay-1 text-[clamp(32px,5vw,52px)] text-ink-black mb-5 md:mb-6 max-w-[720px] text-center mx-auto leading-[1.15] tracking-[-0.02em] font-medium font-heading">
-          Free co-founder matching to start.
-          <br className="hidden md:block" /> Premium venture-building when you need speed.
+          One ecosystem subscription.
+          <br className="hidden md:block" /> Replace dozens of expensive tools.
         </h2>
 
         <div className="flex flex-col md:flex-row justify-center gap-12 md:gap-8 max-w-[900px] mx-auto mt-[60px] md:mt-[80px]">
           {/* Free */}
           <div className="reveal reveal-delay-2 motion-card flex-1 bg-white border border-black/5 rounded-[24px] p-8 md:p-10 flex flex-col relative transition-shadow duration-300 hover:shadow-md">
             <div className="mb-6 pb-6 border-b border-black/5">
-              <h3 className="font-accent text-[20px] font-medium text-slate mb-2">Free Founder Matching</h3>
+              <h3 className="font-accent text-[20px] font-medium text-slate mb-2">Starter</h3>
               <div className="font-heading text-[48px] text-ink-black leading-none">
                 $0<span className="text-[18px] text-light-slate font-body">/mo</span>
               </div>
             </div>
             <ul className="flex-1 list-none p-0 m-0 mb-8 flex flex-col gap-4">
-              <li className="flex items-center gap-3 text-[15px] text-slate"><Check size={16} className="text-bridge-green" /> 1 founder profile</li>
-              <li className="flex items-center gap-3 text-[15px] text-slate"><Check size={16} className="text-bridge-green" /> 3 connects / month</li>
-              <li className="flex items-center gap-3 text-[15px] text-slate"><Check size={16} className="text-bridge-green" /> 1 venture brief</li>
-              <li className="flex items-center gap-3 text-[15px] text-slate"><Check size={16} className="text-bridge-green" /> Shared team dashboard</li>
+              <li className="flex items-center gap-3 text-[15px] text-slate"><Check size={16} className="text-bridge-green" /> Business Profile</li>
+              <li className="flex items-center gap-3 text-[15px] text-slate"><Check size={16} className="text-bridge-green" /> Team Networking</li>
+              <li className="flex items-center gap-3 text-[15px] text-slate"><Check size={16} className="text-bridge-green" /> Basic AI Business Plan</li>
+              <li className="flex items-center gap-3 text-[15px] text-slate"><Check size={16} className="text-bridge-green" /> Community Access</li>
             </ul>
             <a href="#waitlist" className="inline-flex items-center gap-2.5 font-accent font-semibold rounded-full bg-transparent border-2 border-slate/20 text-ink-black transition-all duration-300 ease-[var(--ease-out-expo)] text-[15px] px-[28px] py-[14px] justify-center hover:border-ink-black mt-auto">
-              Join Waitlist
+              Start Free
             </a>
           </div>
 
           {/* Premium */}
           <div className="reveal reveal-delay-3 flex-1 flex flex-col relative mt-8 md:mt-0 md:-translate-y-4 transition-transform duration-300 hover:-translate-y-6">
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-premium-gold to-[#E5C78A] text-ink-black font-accent text-[12px] font-bold uppercase tracking-[0.08em] px-4 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm z-20">
-              <Star size={12} fill="currentColor" /> Most Popular
+              <Star size={12} fill="currentColor" /> Pro Enterprise
             </div>
             <div className="motion-card flex-1 bg-ink-black text-paper-white rounded-[24px] p-8 pt-10 md:p-10 flex flex-col relative shadow-lg border border-white/10">
             <div className="mb-6 pb-6 border-b border-white/10">
-              <h3 className="font-accent text-[20px] font-medium text-[#E5C78A] mb-2">Premium Venture Building</h3>
+              <h3 className="font-accent text-[20px] font-medium text-[#E5C78A] mb-2">Pro Ecosystem</h3>
               <div className="font-heading text-[48px] text-white leading-none">
-                $15<span className="text-[18px] text-white/50 font-body">/mo</span>
+                $49<span className="text-[18px] text-white/50 font-body">/mo</span>
               </div>
             </div>
             <ul className="flex-1 list-none p-0 m-0 mb-8 flex flex-col gap-4">
-              <li className="flex items-center gap-3 text-[15px] text-white/80"><Check size={16} className="text-premium-gold" /> Unlimited connects</li>
-              <li className="flex items-center gap-3 text-[15px] text-white/80"><Check size={16} className="text-premium-gold" /> Unlimited venture briefs & revisions</li>
-              <li className="flex items-center gap-3 text-[15px] text-white/80"><Check size={16} className="text-premium-gold" /> Priority match placement</li>
-              <li className="flex items-center gap-3 text-[15px] text-white/80"><Check size={16} className="text-premium-gold" /> Verified badge</li>
-              <li className="flex items-center gap-3 text-[15px] text-white/80"><Check size={16} className="text-premium-gold" /> Everything in Free</li>
+              <li className="flex items-center gap-3 text-[15px] text-white/80"><Check size={16} className="text-premium-gold" /> Investor Matching & Fundraising</li>
+              <li className="flex items-center gap-3 text-[15px] text-white/80"><Check size={16} className="text-premium-gold" /> Digital Storefronts</li>
+              <li className="flex items-center gap-3 text-[15px] text-white/80"><Check size={16} className="text-premium-gold" /> Advanced Financial Forecasting</li>
+              <li className="flex items-center gap-3 text-[15px] text-white/80"><Check size={16} className="text-premium-gold" /> Legal & Document Workflows</li>
+              <li className="flex items-center gap-3 text-[15px] text-white/80"><Check size={16} className="text-premium-gold" /> Everything in Starter</li>
             </ul>
             <a href="#waitlist" className="inline-flex items-center gap-2.5 font-accent font-semibold rounded-full bg-gradient-to-r from-premium-gold to-[#E5C78A] text-ink-black transition-all duration-300 ease-[var(--ease-out-expo)] border-none text-[15px] px-[28px] py-[14px] justify-center hover:opacity-90 hover:shadow-[0_4px_20px_rgba(212,175,106,0.3)] hover:-translate-y-[1px] mt-auto">
-              Join Waitlist
+              Upgrade to Pro
             </a>
             </div>
           </div>
         </div>
 
         <p className="reveal max-w-[600px] mx-auto text-center mt-12 text-[14px] text-light-slate">
-          No commission on anything you build. No equity ever changes hands on
-          NestBridge: just co-founder matching and venture-building support.
+          Transparent pricing. Say goodbye to paying for Zoom, Shopify, Slack, and AngelList separately.
         </p>
       </div>
     </section>
@@ -598,24 +601,24 @@ function FaqItem({ q, a }: { q: string; a: string }) {
 function FaqSection() {
   const faqs = [
     {
-      q: "Is NestBridge only for tech startup founders?",
-      a: "No. NestBridge works for any startup idea that needs a complementary co-founder. Our starter sectors are Tech and D2C, with more coming.",
+      q: "Can I raise capital directly on NestBridge?",
+      a: "Yes. NestBridge connects startups with angel investors, VC firms, and allows you to offer company shares to qualified investors through compliant mechanisms where legally permitted.",
     },
     {
-      q: "Does NestBridge take equity from matched co-founders?",
-      a: "No. NestBridge does not take equity, commission, or any financial stake. We charge a simple subscription.",
+      q: "Does NestBridge replace my other software?",
+      a: "Our goal is to become your complete operating environment. We aim to replace fragmented tools for networking, video meetings, team chat, store management, and financial forecasting with one integrated ecosystem.",
     },
     {
-      q: "Can I build a venture brief with an existing co-founder?",
-      a: "Yes. The Venture Brief Builder and shared dashboard work for existing teams too, not just new co-founder matches.",
+      q: "How does the AI assistance work?",
+      a: "NestBridge AI helps generate business plans, provides financial forecasting, offers customer insights, and provides expansion strategies based on your business data and goals.",
     },
     {
-      q: "Where is NestBridge co-founder matching available?",
-      a: "NestBridge is built as a global founder matching platform, so you can search for co-founders from anywhere in the world.",
+      q: "Can I still use NestBridge if I just need a co-founder?",
+      a: "Absolutely. Discovering co-founders and building professional teams is still a core pillar of the platform. Once your team is formed, you can immediately begin building, launching, and scaling without changing apps.",
     },
     {
-      q: "Will NestBridge help my startup raise money?",
-      a: "Not directly. NestBridge helps you get to a clear venture brief and the right founder team, which are foundations you need before approaching investors.",
+      q: "Is NestBridge suitable for non-tech businesses?",
+      a: "Yes. Whether you are launching a SaaS startup or opening a digital storefront to sell physical products globally, NestBridge provides the tools, capital connections, and ecosystem to support your growth.",
     },
   ];
 
@@ -627,7 +630,7 @@ function FaqSection() {
       <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6 relative z-10">
         <p className="reveal-clip font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">FAQ</p>
         <h2 className="reveal reveal-delay-1 text-[clamp(32px,5vw,52px)] text-ink-black mb-5 md:mb-6 max-w-[720px] text-center mx-auto leading-[1.15] tracking-[-0.02em] font-medium font-heading">
-          Co-Founder Matching FAQ
+          Frequently Asked Questions
         </h2>
 
         <div className="reveal reveal-delay-2 max-w-[800px] mx-auto mt-[40px] md:mt-[60px]">
@@ -655,10 +658,10 @@ function WaitlistSection() {
         </div>
         
         <h2 className="reveal reveal-delay-1 font-heading text-[clamp(36px,5vw,56px)] leading-[1.1] mb-6 font-medium">
-          Get early access to NestBridge.
+          Step into the new business ecosystem.
         </h2>
         <p className="reveal reveal-delay-2 text-[18px] text-white/60 mb-12 max-w-[500px] mx-auto">
-          We're currently building the platform. Join the waitlist to be notified as soon as founder matching goes live.
+          We're finalizing the infrastructure for modern entrepreneurship. Join the waitlist for early access to our platform.
         </p>
         
         <form 
@@ -678,18 +681,18 @@ function WaitlistSection() {
               name="email" 
               id="email" 
               required 
-              placeholder="founder@startup.com"
+              placeholder="founder@business.com"
               className="w-full bg-ink-black/50 border border-white/15 rounded-xl px-4 py-3.5 text-paper-white placeholder:text-white/30 focus:outline-none focus:border-bridge-green focus:ring-1 focus:ring-bridge-green transition-all"
             />
           </div>
 
           <div className="flex flex-col gap-2">
-            <label htmlFor="note" className="font-accent text-[14px] font-medium text-white/80">What are you building? <span className="text-white/40 font-normal">(Optional)</span></label>
+            <label htmlFor="note" className="font-accent text-[14px] font-medium text-white/80">What are you looking for? <span className="text-white/40 font-normal">(Optional)</span></label>
             <textarea 
               name="note" 
               id="note" 
               rows={3}
-              placeholder="Tell us a bit about your idea or what kind of co-founder you're looking for..."
+              placeholder="Tell us if you're looking for capital, a co-founder, or an all-in-one business dashboard..."
               className="w-full bg-ink-black/50 border border-white/15 rounded-xl px-4 py-3.5 text-paper-white placeholder:text-white/30 focus:outline-none focus:border-bridge-green focus:ring-1 focus:ring-bridge-green transition-all resize-none"
             ></textarea>
           </div>
