@@ -83,22 +83,22 @@ function HeroSection() {
       <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6 relative z-10 pt-[140px] pb-[100px] flex flex-col items-center">
         <div className="max-w-[800px] text-center flex flex-col items-center">
           <span className="reveal-clip inline-block px-4 py-1.5 rounded-full border border-white/15 bg-white/5 font-accent text-[13px] font-medium tracking-[0.06em] uppercase text-white/80 mb-8 backdrop-blur-md">
-            The Operating System of Modern Entrepreneurship
+            The Premier Founder-to-Investor Ecosystem
           </span>
 
           <h1 className="reveal hero-title reveal-delay-1 text-[clamp(44px,7vw,88px)] leading-[1.05] tracking-[-0.03em] font-medium mb-6">
             <span className="text-reveal-line">
-              <span>Your Complete AI</span>
+              <span>Where Great Founders</span>
             </span>
             <span className="text-reveal-line">
               <span className="text-signal-mint italic pr-2 font-normal">
-                Business Ecosystem.
+                Meet Global Capital.
               </span>
             </span>
           </h1>
 
           <p className="reveal-blur reveal-delay-2 text-[19px] md:text-[21px] text-white/60 max-w-[640px] leading-[1.6] mb-10 mx-auto">
-            NestBridge connects multiple business functions into one intelligent environment. Create, fund, manage, expand, and sustain your business without relying on dozens of disconnected apps.
+            NestBridge seamlessly connects founders to investors. Create, fund, manage, expand, and sustain your business in one intelligent environment without relying on dozens of disconnected apps.
           </p>
 
           <div className="reveal reveal-delay-3 flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto mb-16">
@@ -112,8 +112,8 @@ function HeroSection() {
           </div>
 
           <p className="reveal reveal-delay-4 text-[14px] text-white/30 font-accent tracking-[0.02em]">
-            Build Teams&nbsp;&nbsp;·&nbsp;&nbsp;Raise Capital
-            &nbsp;&nbsp;·&nbsp;&nbsp;Launch Storefronts
+            Refine Pitches&nbsp;&nbsp;·&nbsp;&nbsp;Discover Investors
+            &nbsp;&nbsp;·&nbsp;&nbsp;Raise Capital
           </p>
         </div>
       </div>
@@ -130,18 +130,18 @@ function ProblemSection() {
   const cards = [
     {
       icon: <FileText size={24} />,
-      title: "Data Fragmentation",
-      text: "Stop jumping between accounting software, CRM, and documents. Centralize everything in one operating system.",
+      title: "Fragmented Workflows",
+      text: "Stop jumping between emails, pitch decks, and scattered investor CRMs. Manage your entire fundraise in one place.",
     },
     {
       icon: <DollarSign size={24} />,
-      title: "Higher Costs",
-      text: "Eliminate dozens of separate subscriptions for networking, analytics, legal, and communication tools.",
+      title: "Misaligned Matches",
+      text: "Stop wasting time pitching to investors whose thesis, ticket size, or stage requirements don't match your startup.",
     },
     {
       icon: <Users size={24} />,
-      title: "Poor Collaboration",
-      text: "Keep investors, team members, and partners aligned in one trusted environment without communication delays.",
+      title: "Lack of Preparation",
+      text: "Present the standardized, professional data that investors expect with AI-guided pitch and profile preparation.",
     },
   ];
 
@@ -153,11 +153,11 @@ function ProblemSection() {
       <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6 relative z-10">
         <p className="reveal-clip font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">The Problem</p>
         <h2 className="reveal reveal-delay-1 text-[clamp(32px,5vw,52px)] text-ink-black mb-5 md:mb-6 max-w-[720px] text-center mx-auto leading-[1.15] tracking-[-0.02em] font-medium font-heading">
-          Stop managing subscriptions.
-          <br className="hidden md:block" /> Start building your business.
+          Stop chasing cold leads.
+          <br className="hidden md:block" /> Start raising capital intelligently.
         </h2>
         <p className="reveal reveal-delay-2 text-[18px] md:text-[19px] text-slate max-w-[580px] leading-[1.7] text-center mx-auto mb-[60px] md:mb-[80px]">
-          NestBridge addresses one of the largest inefficiencies in modern entrepreneurship: Fragmentation. Reclaim your lost productivity and focus on innovation instead of administration.
+          NestBridge addresses the biggest friction point in entrepreneurship: Capital Allocation. Reclaim your lost time and focus on building your business instead of endlessly hunting for funding.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-[1100px] mx-auto">
@@ -188,26 +188,26 @@ function HowItWorksSection() {
   const steps = [
     {
       num: "01",
-      title: "Build Professional Teams",
-      text: "Discover co-founders, hire global talent, and build professional communities tailored to your industry.",
+      title: "Create Your Startup Profile",
+      text: "Build a standardized digital profile showcasing your business model, milestones, and team to stand out.",
       img: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80",
     },
     {
       num: "02",
-      title: "Develop AI Strategies",
-      text: "Generate business plans and receive financial forecasts with our intelligent AI assistance.",
+      title: "AI-Powered Preparation",
+      text: "Utilize AI-assisted tools to refine your pitch, organize financial data, and prepare for investor scrutiny.",
       img: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80",
     },
     {
       num: "03",
-      title: "Raise Capital & Offer Shares",
-      text: "Find investors, raise capital legally, and offer company shares in compliance with applicable regulations.",
+      title: "Intelligent Matchmaking",
+      text: "Get matched with investors whose investment thesis, ticket size, and portfolio interests align perfectly with you.",
       img: "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?auto=format&fit=crop&w=800&q=80",
     },
     {
       num: "04",
-      title: "Launch & Sell Globally",
-      text: "Launch digital storefronts, manage commerce, and expand your operations internationally in one place.",
+      title: "Secure Data Rooms",
+      text: "Share pitch decks, financial forecasts, and compliance documents safely to close the round faster.",
       img: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80",
     },
   ];
@@ -220,8 +220,8 @@ function HowItWorksSection() {
       <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6 relative z-10">
         <p className="reveal-clip font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">How NestBridge Works</p>
         <h2 className="reveal reveal-delay-1 text-[clamp(32px,5vw,52px)] text-ink-black mb-5 md:mb-6 max-w-[720px] text-center mx-auto leading-[1.15] tracking-[-0.02em] font-medium font-heading">
-          Infrastructure for Entrepreneurship.
-          <br className="hidden md:block" /> From idea to international expansion.
+          The Smartest Path to Funding.
+          <br className="hidden md:block" /> From pitch to closed round.
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 mt-[60px] md:mt-[80px]">
@@ -271,28 +271,28 @@ function ShowcaseSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <div className="text-left">
             <p className="reveal-clip font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-signal-mint mb-5 text-left ml-0">
-              The Startup OS
+              Investor Matchmaking
             </p>
             <h2 className="reveal reveal-delay-1 text-[clamp(32px,5vw,52px)] text-paper-white mb-5 md:mb-6 max-w-[720px] text-left ml-0 leading-[1.15] tracking-[-0.02em] font-medium font-heading">
-              Everything to manage your venture,
+              Everything you need to raise capital,
               <br />in one intelligent platform.
             </h2>
             <p className="reveal reveal-delay-2 text-[17px] text-white/55 leading-[1.7] mt-5 max-w-[500px]">
-              Access AI guidance, financial tools, team building, legal support, networking, and marketplace services in an integrated ecosystem that adapts to your growth.
+              Access AI pitch guidance, financial forecasting tools, verified investor networks, and secure data rooms in an integrated ecosystem that prepares you for funding.
             </p>
 
             <div className="reveal reveal-delay-3 flex flex-wrap gap-8 md:gap-12 mt-12 pt-10 border-t border-white/10">
               <div className="flex flex-col gap-1">
-                <span className="font-accent text-[28px] font-semibold text-paper-white">Growth</span>
-                <span className="text-[13px] text-signal-mint font-medium tracking-[0.05em] uppercase">Built-in AI</span>
+                <span className="font-accent text-[28px] font-semibold text-paper-white">Pitch</span>
+                <span className="text-[13px] text-signal-mint font-medium tracking-[0.05em] uppercase">AI-Guided</span>
               </div>
               <div className="flex flex-col gap-1">
-                <span className="font-accent text-[28px] font-semibold text-paper-white">Capital</span>
-                <span className="text-[13px] text-signal-mint font-medium tracking-[0.05em] uppercase">Compliant funding</span>
+                <span className="font-accent text-[28px] font-semibold text-paper-white">Match</span>
+                <span className="text-[13px] text-signal-mint font-medium tracking-[0.05em] uppercase">Smart Discovery</span>
               </div>
               <div className="flex flex-col gap-1">
-                <span className="font-accent text-[28px] font-semibold text-paper-white">Scale</span>
-                <span className="text-[13px] text-signal-mint font-medium tracking-[0.05em] uppercase">Global reach</span>
+                <span className="font-accent text-[28px] font-semibold text-paper-white">Close</span>
+                <span className="text-[13px] text-signal-mint font-medium tracking-[0.05em] uppercase">Secure Data Rooms</span>
               </div>
             </div>
           </div>
@@ -321,9 +321,9 @@ function ShowcaseSection() {
                   <p className="text-[15px] text-slate leading-[1.5]">Revenue projected to increase 15% with international expansion into the European market.</p>
                 </div>
                 <div className="flex flex-wrap gap-2 pt-2">
-                  <span className="bg-mist text-slate font-accent text-[12px] font-medium px-3 py-1 rounded-full">Legal Docs</span>
-                  <span className="bg-mist text-slate font-accent text-[12px] font-medium px-3 py-1 rounded-full">Storefront</span>
-                  <span className="bg-mist text-slate font-accent text-[12px] font-medium px-3 py-1 rounded-full">Team Chat</span>
+                  <span className="bg-mist text-slate font-accent text-[12px] font-medium px-3 py-1 rounded-full">Pitch Deck</span>
+                  <span className="bg-mist text-slate font-accent text-[12px] font-medium px-3 py-1 rounded-full">Cap Table</span>
+                  <span className="bg-mist text-slate font-accent text-[12px] font-medium px-3 py-1 rounded-full">Investor Chat</span>
                 </div>
               </div>
             </div>
@@ -339,23 +339,23 @@ function DifferentiatorSection() {
   const rows = [
     {
       name: "LinkedIn",
-      them: "Connect professionals and find jobs",
-      us: "Build companies, find investors, and manage business growth",
+      them: "Connect professionals for jobs passively",
+      us: "Direct action: connect founders to capital and execute your fundraise",
     },
     {
       name: "AngelList",
       them: "Connect startups with investors",
-      us: "Prepare businesses with AI guidance, team building, and legal support before fundraising",
+      us: "Prepare businesses with AI guidance before the raise so you actually get funded",
     },
     {
-      name: "Shopify",
-      them: "Enable online commerce",
-      us: "Enable commerce while supporting networking, investment, and collaboration",
+      name: "Data Rooms",
+      them: "Isolated, expensive document sharing",
+      us: "Built-in secure document sharing natively connected to investor discovery",
     },
     {
       name: "Zoom & Slack",
-      them: "Provide isolated communication",
-      us: "Integrate video and messaging directly into your business workflow and documents",
+      them: "Provide isolated communication tools",
+      us: "Integrate video and messaging directly into your investor workflow",
     },
   ];
 
@@ -389,7 +389,7 @@ function DifferentiatorSection() {
         </div>
 
         <p className="reveal reveal-delay-3 max-w-[700px] mx-auto text-center mt-12 text-[20px] md:text-[24px] font-heading italic text-light-slate leading-[1.5]">
-          &ldquo;NestBridge combines artificial intelligence, networking, commerce, investment, and growth into one intelligent platform.&rdquo;
+          &ldquo;NestBridge combines artificial intelligence, smart matchmaking, and secure data rooms to get startups funded faster.&rdquo;
         </p>
       </div>
     </section>
@@ -401,33 +401,33 @@ function FeaturesSection() {
   const features = [
     {
       icon: <Users size={24} />,
-      title: "Global Talent & Community",
-      text: "Connect with developers, designers, marketers, and advisors to collaborate regardless of location.",
+      title: "Verified Investor Network",
+      text: "Connect with a vetted network of angel investors, VC firms, and syndicates actively looking for opportunities.",
     },
     {
       icon: <Briefcase size={24} />,
-      title: "Access to Capital",
-      text: "Connect with angel investors, VC firms, and raise capital by offering shares through compliant mechanisms.",
+      title: "Smart Discovery Filters",
+      text: "Filter investors by thesis, check size, stage, and geography to ensure you only pitch to aligned capital.",
     },
     {
       icon: <Sparkles size={24} />,
-      title: "AI Business Strategies",
-      text: "Transform ideas into successful businesses with AI-powered tools and intelligent guided workflows.",
+      title: "AI Pitch Refinement",
+      text: "Improve your pitch deck and business profile with AI-driven feedback tailored to what investors want to see.",
     },
     {
       icon: <TrendingUp size={24} />,
       title: "Financial Forecasting",
-      text: "Offer advanced business intelligence, financial forecasting, and expansion strategies that evolve with you.",
+      text: "Generate clear, professional financial projections that withstand investor due diligence.",
     },
     {
       icon: <Store size={24} />,
-      title: "Digital Storefronts",
-      text: "Launch your storefront, sell products, and conduct live demonstrations directly to your professional community.",
+      title: "Secure Data Rooms",
+      text: "Host your pitch decks, cap tables, and legal documents securely, with detailed analytics on who is viewing what.",
     },
     {
       icon: <Shield size={24} />,
-      title: "Secure Operations",
-      text: "Manage documents, access legal resources, and communicate safely with strong verification and fraud prevention.",
+      title: "Compliant Frameworks",
+      text: "Access legal templates, streamline due diligence, and communicate safely with strong identity verification.",
     },
   ];
 
@@ -505,8 +505,8 @@ function PricingSection() {
       <div className="w-full max-w-[1200px] mx-auto px-6 md:px-12 xl:px-6 relative z-10">
         <p className="reveal-clip font-accent text-[13px] font-semibold uppercase tracking-[0.12em] text-bridge-green mb-5 text-center">Pricing</p>
         <h2 className="reveal reveal-delay-1 text-[clamp(32px,5vw,52px)] text-ink-black mb-5 md:mb-6 max-w-[720px] text-center mx-auto leading-[1.15] tracking-[-0.02em] font-medium font-heading">
-          One ecosystem subscription.
-          <br className="hidden md:block" /> Replace dozens of expensive tools.
+          One fundraising platform.
+          <br className="hidden md:block" /> Replace scattered investor tools.
         </h2>
 
         <div className="flex flex-col md:flex-row justify-center gap-12 md:gap-8 max-w-[900px] mx-auto mt-[60px] md:mt-[80px]">
@@ -519,9 +519,9 @@ function PricingSection() {
               </div>
             </div>
             <ul className="flex-1 list-none p-0 m-0 mb-8 flex flex-col gap-4">
-              <li className="flex items-center gap-3 text-[15px] text-slate"><Check size={16} className="text-bridge-green" /> Business Profile</li>
-              <li className="flex items-center gap-3 text-[15px] text-slate"><Check size={16} className="text-bridge-green" /> Team Networking</li>
-              <li className="flex items-center gap-3 text-[15px] text-slate"><Check size={16} className="text-bridge-green" /> Basic AI Business Plan</li>
+              <li className="flex items-center gap-3 text-[15px] text-slate"><Check size={16} className="text-bridge-green" /> Startup Profile</li>
+              <li className="flex items-center gap-3 text-[15px] text-slate"><Check size={16} className="text-bridge-green" /> Basic Investor Discovery</li>
+              <li className="flex items-center gap-3 text-[15px] text-slate"><Check size={16} className="text-bridge-green" /> AI Pitch Feedback</li>
               <li className="flex items-center gap-3 text-[15px] text-slate"><Check size={16} className="text-bridge-green" /> Community Access</li>
             </ul>
             <a href="#waitlist" className="inline-flex items-center gap-2.5 font-accent font-semibold rounded-full bg-transparent border-2 border-slate/20 text-ink-black transition-all duration-300 ease-[var(--ease-out-expo)] text-[15px] px-[28px] py-[14px] justify-center hover:border-ink-black mt-auto">
@@ -536,16 +536,16 @@ function PricingSection() {
             </div>
             <div className="motion-card flex-1 bg-ink-black text-paper-white rounded-[24px] p-8 pt-10 md:p-10 flex flex-col relative shadow-lg border border-white/10">
             <div className="mb-6 pb-6 border-b border-white/10">
-              <h3 className="font-accent text-[20px] font-medium text-[#E5C78A] mb-2">Pro Ecosystem</h3>
+              <h3 className="font-accent text-[20px] font-medium text-[#E5C78A] mb-2">Pro Fundraising</h3>
               <div className="font-heading text-[48px] text-white leading-none">
                 $49<span className="text-[18px] text-white/50 font-body">/mo</span>
               </div>
             </div>
             <ul className="flex-1 list-none p-0 m-0 mb-8 flex flex-col gap-4">
-              <li className="flex items-center gap-3 text-[15px] text-white/80"><Check size={16} className="text-premium-gold" /> Investor Matching & Fundraising</li>
-              <li className="flex items-center gap-3 text-[15px] text-white/80"><Check size={16} className="text-premium-gold" /> Digital Storefronts</li>
+              <li className="flex items-center gap-3 text-[15px] text-white/80"><Check size={16} className="text-premium-gold" /> Advanced Investor Matching</li>
+              <li className="flex items-center gap-3 text-[15px] text-white/80"><Check size={16} className="text-premium-gold" /> Secure Data Rooms & Analytics</li>
               <li className="flex items-center gap-3 text-[15px] text-white/80"><Check size={16} className="text-premium-gold" /> Advanced Financial Forecasting</li>
-              <li className="flex items-center gap-3 text-[15px] text-white/80"><Check size={16} className="text-premium-gold" /> Legal & Document Workflows</li>
+              <li className="flex items-center gap-3 text-[15px] text-white/80"><Check size={16} className="text-premium-gold" /> Priority Discovery Placement</li>
               <li className="flex items-center gap-3 text-[15px] text-white/80"><Check size={16} className="text-premium-gold" /> Everything in Starter</li>
             </ul>
             <a href="#waitlist" className="inline-flex items-center gap-2.5 font-accent font-semibold rounded-full bg-gradient-to-r from-premium-gold to-[#E5C78A] text-ink-black transition-all duration-300 ease-[var(--ease-out-expo)] border-none text-[15px] px-[28px] py-[14px] justify-center hover:opacity-90 hover:shadow-[0_4px_20px_rgba(212,175,106,0.3)] hover:-translate-y-[1px] mt-auto">
@@ -556,7 +556,7 @@ function PricingSection() {
         </div>
 
         <p className="reveal max-w-[600px] mx-auto text-center mt-12 text-[14px] text-light-slate">
-          Transparent pricing. Say goodbye to paying for Zoom, Shopify, Slack, and AngelList separately.
+          Transparent pricing. Stop paying for scattered data rooms, CRMs, and networking tools separately.
         </p>
       </div>
     </section>
@@ -606,19 +606,19 @@ function FaqSection() {
     },
     {
       q: "Does NestBridge replace my other software?",
-      a: "Our goal is to become your complete operating environment. We aim to replace fragmented tools for networking, video meetings, team chat, store management, and financial forecasting with one integrated ecosystem.",
+      a: "Our immediate goal is to replace fragmented fundraising tools. We eliminate the need to juggle separate data rooms, investor CRMs, and pitch platforms by integrating everything you need to close a round securely.",
     },
     {
       q: "How does the AI assistance work?",
-      a: "NestBridge AI helps generate business plans, provides financial forecasting, offers customer insights, and provides expansion strategies based on your business data and goals.",
+      a: "NestBridge AI acts as your virtual fundraising advisor. It helps refine your pitch deck, generates financial forecasting, and analyzes your profile to suggest the best investor matches based on historical data.",
     },
     {
-      q: "Can I still use NestBridge if I just need a co-founder?",
-      a: "Absolutely. Discovering co-founders and building professional teams is still a core pillar of the platform. Once your team is formed, you can immediately begin building, launching, and scaling without changing apps.",
+      q: "What is your long-term vision?",
+      a: "While our current focus is exclusively on connecting founders to investors, NestBridge will eventually become a complete operating ecosystem—supporting everything from storefronts to team management.",
     },
     {
-      q: "Is NestBridge suitable for non-tech businesses?",
-      a: "Yes. Whether you are launching a SaaS startup or opening a digital storefront to sell physical products globally, NestBridge provides the tools, capital connections, and ecosystem to support your growth.",
+      q: "Is NestBridge suitable for early-stage startups?",
+      a: "Yes, absolutely. We specifically designed our AI preparation tools to help pre-seed and seed stage founders professionalize their data and stand out when pitching to their first institutional or angel investors.",
     },
   ];
 
